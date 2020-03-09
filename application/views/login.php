@@ -40,6 +40,7 @@
                     <h1 class="h1 text-gray-900 mb-2"><i class="fad fa-cctv"></i></61>
                     <h1 class="h4 text-gray-900 mb-4"><strong>PORTAL CCTV</strong></h1>
                   </div>
+                  <hr>
                   <form class="user" action="../function/act_login.php" method="post">
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" name="funame" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Username" autocomplete="off" autofocus>
@@ -47,7 +48,7 @@
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" id="exampleInputPassword" name="fpass" placeholder="Password" autocomplete="off">
                     </div>
-                    <button class="btn btn-secondary btn-user btn-block mb-4" type="submit">LOGIN</button>
+                    <button class="btn btn-secondary btn-user btn-block mb-3" type="submit">LOGIN</button>
                     
                     <hr>
                     <div class="text-center">
