@@ -16,7 +16,7 @@
   <link href="<?=base_url().'assets/css/font.css'?>" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="<?=base_url().'assets/css/sb-admin-2.min.css'?>" rel="stylesheet">
+  <link href="<?=base_url().'assets/css/sb-admin-2.css'?>" rel="stylesheet">
 
 </head>
 
@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fad fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -54,22 +54,22 @@
         Administrasi
       </div>
 		<li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fad fa-stream"></i>
           <span>Catatan Aktivitas</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
         	<i class="far fa-cctv"></i>
           <span>Laporan Temuan</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fad fa-toolbox"></i>
           <span>Laporan Perbaikan</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fad fa-eye"></i>
           <span>Catatan Edit Absen</span></a>
       </li>
@@ -80,19 +80,24 @@
         Data Master
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
+          <i class="fad fa-map-marked-alt"></i>
+          <span>CCTV Area</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fad fa-network-wired"></i>
+          <span>IP Addres</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
       		<i class="fad fa-users"></i>
           <span>Staff CCTV</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="#">
           <i class="fad fa-users-class"></i>
           <span>PIC Temuan</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="fad fa-network-wired"></i>
-          <span>IP Addres</span></a>
       </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
