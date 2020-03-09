@@ -86,12 +86,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fad fa-users-class"></i>
           <span>PIC Temuan</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fad fa-network-wired"></i>
           <span>IP Addres</span></a>
       </li>
       <!-- Divider -->
