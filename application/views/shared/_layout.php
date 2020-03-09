@@ -9,14 +9,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>PORTAL CCTV</title>
-
+  <title>Portal CCTV | <?php echo ucfirst($this->uri->segment(1)) ?></title>
+  <link rel="icon" href="<?=base_url().'favicon.png'?>"/>
   <!-- Custom fonts for this template-->
   <link href="<?=base_url().'assets/vendor/fontawesome/css/all.min.css'?>" rel="stylesheet" type="text/css">
   <link href="<?=base_url().'assets/css/font.css'?>" rel="stylesheet">
-
   <!-- Custom styles for this template-->
   <link href="<?=base_url().'assets/css/sb-admin-2.css'?>" rel="stylesheet">
+  <!-- Custom styles datatables-->
+  <link href="<?= base_url().'assets/vendor/datatables/jquery.dataTables.min.css'?>" rel="stylesheet">
 
 </head>
 
@@ -48,8 +49,8 @@
 
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
+        <li class="nav-item <?php echo $this->uri->segment(1) == 'dashboard' ? 'active': '' ?>">
+          <a class="nav-link" href="<?=base_url('dashboard')?>">
             <i class="fad fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
           </li>
@@ -90,15 +91,15 @@
                     <i class="fad fa-map-marked-alt"></i>
                     <span>CCTV Area</span></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li class="nav-item <?php echo $this->uri->segment(1) == 'ipaddress' ? 'active': '' ?>">
+                    <a class="nav-link" href="<?=base_url('ipaddress')?>">
                       <i class="fad fa-network-wired"></i>
-                      <span>IP Addres</span></a>
+                      <span>IP Address</span></a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
+                    <li class="nav-item <?php echo $this->uri->segment(1) == 'user' ? 'active': '' ?>">
+                      <a class="nav-link" href="<?=base_url('user')?>">
                         <i class="fad fa-users"></i>
-                        <span>Staff CCTV</span></a>
+                        <span>User Portal CCTV</span></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -166,7 +167,7 @@
                           <div class="container-fluid">
 
                             <!-- Page Heading -->
-                            <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                            <?=$contents?>
 
                           </div>
                           <!-- /.container-fluid -->
@@ -217,13 +218,45 @@
                     <!-- Bootstrap core JavaScript-->
                     <script src="<?=base_url().'assets/vendor/jquery/jquery.min.js'?>"></script>
                     <script src="<?=base_url().'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'?>"></script>
-
                     <!-- Core plugin JavaScript-->
                     <script src="<?=base_url().'assets/vendor/jquery-easing/jquery.easing.min.js'?>"></script>
-
                     <!-- Custom scripts for all pages-->
                     <script src="<?=base_url().'assets/js/sb-admin-2.min.js'?>"></script>
-
+                    <!-- Custom scripts for datatables-->
+                    <script src="<?=base_url().'assets/vendor/datatables/jquery.dataTables.min.js'?>"></script>
                   </body>
-
                   </html>
+
+                  <!--Delete Confirmation-->
+                  <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
+                          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">Data yang dihapus tidak akan bisa dikembalikan.</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-secondary" type="button" data-dismiss="modal"><i class="fas fa-window-close"></i> Cancel</button>
+                          <a id="btn-delete" class="btn btn-danger" href="#"><i class="fas fa-trash-alt"></i> Delete</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    $(document).ready(function() {
+                      $('#masteruser').DataTable({
+                        "language":{
+                          "url":"<?php echo base_url().'assets/vendor/datatables/Indonesia.json'?>",
+                          "sEmptyTable":"Tidak ada data"
+                        }
+                      });
+                    } );
+
+                    function deleteConfirm(url){
+                      $('#btn-delete').attr('href', url);
+                      $('#deleteModal').modal();
+                    }
+                  </script>

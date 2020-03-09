@@ -9,7 +9,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portal CCTV - Login</title>
+  <title>Login | Portal CCTV</title>
+  <link rel="icon" href="<?=base_url().'favicon.png'?>"/>
 
   <!-- Custom fonts for this template-->
   <link href="<?=base_url().'assets/vendor/fontawesome/css/all.min.css'?>" rel="stylesheet" type="text/css">
