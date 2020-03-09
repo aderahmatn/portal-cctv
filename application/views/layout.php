@@ -26,14 +26,15 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <ul class="navbar-nav bg-gray-900 sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?=base_url()?>">
+      <a class="sidebar-brand d-flex bg-gray-100 text-gray-900 align-items-center justify-content-center" href="<?=base_url()?>">
         <div class="sidebar-brand-icon fa-flip-horizontal">
           <i class="fad fa-cctv"></i>
         </div>
-        <div class="sidebar-brand-text mx-2">PORTAL CCTV <sup>v2</sup></div>
+        <div class="sidebar-brand-text mx-3">PORTAL CCTV</div>
       </a>
 
       <!-- Divider -->
@@ -111,7 +112,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-gray-100 topbar mb-4 static-top shadow-lg">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -122,11 +123,11 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-            <div class="topbar-divider d-none d-sm-block"></div>
+            <div class="topbar-divider d-none d-sm-block text-gray-900"></div>
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-900 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
