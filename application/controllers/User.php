@@ -9,6 +9,12 @@ class User extends CI_Controller {
 		
 	}
 
+	public function create()
+	{
+		$this->template->load('shared/_layout','user/create');
+		
+	}
+
 }
 
 /* End of file User.php */

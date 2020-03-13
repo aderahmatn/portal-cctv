@@ -3,8 +3,8 @@
 	<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
 		<h6 class="m-0 font-weight-bold text-gray-900">Master User</h6>
 		<div class="button">
-			<a href="#" class="btn btn-secondary btn-sm btn-icon-split">
-				<span class="icon text-white-50">
+			<a href="<?=base_url('user/create') ?>" class="btn btn-success btn-sm btn-icon-split">
+				<span class="icon text-white-100">
 					<i class="fad fa-user-plus"></i>
 				</span>
 				<span class="text">Tambah User</span>
