@@ -10,7 +10,8 @@
 	</div>
 	<div class="card-body">
 		
-		<form>
+		<form action="" method="post">
+			<input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash(); ?>">
 			<div class="form-row">
 				<div class="form-group col-md-4">
 					<label for="fnik">Nomor Induk Karyawan</label>
