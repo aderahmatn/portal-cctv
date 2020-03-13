@@ -5,7 +5,7 @@ class Auth extends CI_Controller {
 
 	public function login()
 	{
-		$this->template->load('shared/_layout','auth/login');
+		$this->load->view('auth/login');
 	}
 
 }
