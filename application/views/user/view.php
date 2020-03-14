@@ -13,23 +13,23 @@
 		<div class="tab-content" id="nav-tabContent">
 			<div class="tab-pane fade show active" id="nav-master" role="tabpanel" aria-labelledby="nav-master-tab">
 				<div class="table-responsive mt-3 mb-3">
-					<table class="table table-borderless " id="masteruser" width="100%" cellspacing="0">
+					<table class="table table-borderless table-hover" id="masteruser" width="100%" cellspacing="0">
 						<thead>
 							<tr>
-								<th>No</th>
-								<th>NIK</th>
+								<th width="10">No</th>
+								<th width="120">NIK</th>
 								<th>Nama Lengkap</th>
 								<th>Username</th>
 								<th>Handphone</th>
-								<th></th>
+								<th width="50"></th>
 							</tr>
 						</thead>
 						<tr>
 							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
+							<td>46899</td>
+							<td>ADE RAHMAT NURDIYANA</td>
+							<td>aderahmatn</td>
+							<td>087776451664</td>
 							<td>
 								<button onclick="deleteConfirm('<?=site_url('barang/delete/')?>')" href="#!" class="btn btn-circle btn-sm btn-danger" data-toggle="tooltip" data-placement="bottom" title="Hapus User <?='ade'?>">
 									<i class="fas fa-user-minus"></i>
@@ -42,10 +42,10 @@
 						</tr>
 						<tr>
 							<td>2</td>
-							<td>2</td>
-							<td>2</td>
-							<td>2</td>
-							<td>1</td>
+							<td>49827</td>
+							<td>AHMAD HUSEIN</td>
+							<td>husein02</td>
+							<td>08123728172</td>
 							<td>
 								<a onclick="deleteConfirm('<?=site_url('barang/delete/')?>')" href="#!" class="btn btn-circle btn-sm btn-danger">
 									<i class="fas fa-user-minus"></i>
